@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef0f7cce-0d70-4835-ad00-4537efd09246" name="Default Changelist" comment="" />
+    <list default="true" id="ef0f7cce-0d70-4835-ad00-4537efd09246" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/TOP250_douban_movies/spiders/comments.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -58,6 +60,9 @@
       <find>TPO250_douban_movies</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -89,16 +94,20 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
-    <option name="y" value="-3" />
+    <option name="x" value="-5" />
+    <option name="y" value="-5" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,12 +130,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -134,7 +141,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TPO250_douban_movies/spiders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -222,17 +229,18 @@
       <workItem from="1572668315148" duration="10075000" />
       <workItem from="1572748461568" duration="3497000" />
       <workItem from="1572757899690" duration="1799000" />
+      <workItem from="1572761087830" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107793000" />
+    <option name="totallyTimeSpent" value="107805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -396,20 +404,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TOP250_douban_movies/spiders/comments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TOP250_douban_movies/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TOP250_douban_movies/spiders/comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
