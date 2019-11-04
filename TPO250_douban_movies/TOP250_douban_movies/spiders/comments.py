@@ -7,6 +7,8 @@ from scrapy import Request
 from pyquery import PyQuery as pq
 import re
 from TOP250_douban_movies.items import CommentInfoItem
+from TOP250_douban_movies.settings import *
+
 
 class CommentsSpider(scrapy.Spider):
     name = 'comments'
@@ -27,13 +29,9 @@ class CommentsSpider(scrapy.Spider):
             new_next_link_index = next_link_index + 10
             f.write(str(new_next_link_index))
 
-        client = pymongo.MongoClient(host='localhost', port=27017)
-        db = client['top_250_douban_movies_2']
-        top_250_movie_infos_collection = db['top_250_movie_infos']
-        movie_link_list = []
-        for top_250_movie_info in top_250_movie_infos_collection.find():
-            movie_link = top_250_movie_info['movie_link']
-            movie_link_list.append(movie_link)
+        # 后面可以加一个从数据库中读取已爬取的comment链接去重
+        movie_link_list = self.get_movie_link_list()
+        comment_page_link_list = self.get_comment_page_link_list()
 
         for index in range(next_link_index, new_next_link_index):
             if index >= 250:
@@ -60,11 +58,18 @@ class CommentsSpider(scrapy.Spider):
                 for start in range(25):
                     tmp_link = real_comments_link
                     request_comments_link = str.replace(tmp_link, '$', str(start * 20))
-                    # 然后可以爬取每个 movie 的短评信息
-                    self.logger.info(request_comments_link)
-                    yield Request(url=request_comments_link, callback=self.parse_comments)
+                    if request_comments_link not in comment_page_link_list:
+                        # 然后可以爬取每个 movie 的短评信息
+                        self.logger.info(request_comments_link)
+                        yield Request(url=request_comments_link, callback=self.parse_comments)
+                    else:
+                        self.logger.info(request_comments_link)
+                        self.logger.info('该链接已经爬取过')
 
     def parse_comments(self, response):
+        comment_page_link = response.url
+        self.logger.info('comment_page_link')
+        self.logger.info(comment_page_link)
         comment_info_item = CommentInfoItem()
         html = response.text
         doc = pq(html)
@@ -72,7 +77,6 @@ class CommentsSpider(scrapy.Spider):
         comment_movie_title = doc('#content > h1').text()
         comment_movie_title = comment_movie_title.split(' ')[0]
         comment_items = doc('#comments > div.comment-item')
-        movie_link = doc('#content > div > div.aside > p > a').attr('href')
         for comment_item in comment_items.items():
             commenter = comment_item('div.comment > h3 > span.comment-info > a')
             commenter_link = commenter.attr('href')
@@ -99,6 +103,28 @@ class CommentsSpider(scrapy.Spider):
             comment_info_item['comment_timestamp'] = comment_timestamp
             comment_info_item['comment_rating_stars'] = comment_rating_stars
             comment_info_item['comment_movie_title'] = comment_movie_title
+            comment_info_item['comment_page_link'] = comment_page_link
 
             self.logger.info(comment_info_item)
             yield comment_info_item
+
+    def get_movie_link_list(self):
+        client = pymongo.MongoClient(host=MONGO_URI, port=27017)
+        db = client[MONGO_DATABASE]
+        top_250_movie_infos_collection = db['top_250_movie_infos']
+        movie_link_list = []
+        for top_250_movie_info in top_250_movie_infos_collection.find():
+            movie_link = top_250_movie_info['movie_link']
+            movie_link_list.append(movie_link)
+        return movie_link_list
+
+    def get_comment_page_link_list(self):
+        client = pymongo.MongoClient(host=MONGO_URI, port=27017)
+        db = client[MONGO_DATABASE]
+        top_250_movie_infos_collection = db['comment_infos']
+        comment_page_link_list = []
+        for top_250_movie_info in top_250_movie_infos_collection.find():
+            comment_page_link = top_250_movie_info['comment_page_link']
+            if comment_page_link not in comment_page_link_list:
+                comment_page_link_list.append(comment_page_link)
+        return comment_page_link_list

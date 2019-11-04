@@ -37,10 +37,12 @@ class CommentInfoItem(Item):
     comment_rating_stars = Field()
     comment_useful_upvote = Field()
     comment_movie_title = Field()
+    comment_page_link = Field()
 
 class CommenterInfoItem(Item):
     collection = 'commenter_infos'
 
+    commenter_link = Field()
     location = Field()
     register_timestamp = Field()
     account_name = Field()

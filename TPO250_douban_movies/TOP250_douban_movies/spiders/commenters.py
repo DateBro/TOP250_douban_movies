@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-import random
 import re
 import time
-import pyquery as pq
 import pymongo
 import scrapy
 from scrapy import Request
 
 from TOP250_douban_movies.items import CommenterInfoItem
+from TOP250_douban_movies.settings import *
 
 
 class CommentersSpider(scrapy.Spider):
@@ -16,39 +15,72 @@ class CommentersSpider(scrapy.Spider):
     start_urls = ['http://www.douban.com/people/']
 
     def start_requests(self):
-        client = pymongo.MongoClient(host='localhost', port=27017)
-        db = client['top_250_douban_movies']
+        commenter_link_list = self.get_commenter_link_list()
+        crawled_commenter_link_list = self.get_commenter_link_list()
+
+        for commenter_link in commenter_link_list[0:1000]:
+            if commenter_link not in crawled_commenter_link_list:
+                crawled_commenter_link_list.append(commenter_link)
+                time.sleep(4)
+                self.logger.info(commenter_link)
+                yield Request(url=commenter_link, callback=self.parse_commenters)
+
+    def parse_commenters(self, response):
+        commenter_info_item = CommenterInfoItem()
+
+        commenter_link = response.xpath('//*[@id="db-usr-profile"]/div[2]/ul/li[1]/a/@href').extract()
+        commenter_link = commenter_link[0]
+        commenter_info_item['commenter_link'] = commenter_link
+
+        location = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/a/text()').extract()
+        if location is None:
+            lcoation = '未知'
+        else:
+            location = location[0]
+        commenter_info_item['location'] = location
+
+        register_timestamp = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/div/text()[2]').extract()
+        register_timestamp = register_timestamp[0]
+        # 截取 xxxx-xx-xx 日期
+        result = re.findall('(.*)加入', register_timestamp)
+        register_timestamp = result[0]
+        register_timestamp = register_timestamp[0:10]
+        commenter_info_item['register_timestamp'] = register_timestamp
+
+        account_name = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/div/text()[1]').extract()
+        account_name = account_name[0]
+        account_name = str.strip(account_name)
+        commenter_info_item['account_name'] = account_name[0]
+
+        following_num = response.xpath('//*[@id="friend"]/h2/span/a/text()').extract()
+        following_num = following_num[0]
+        # 截取 成员xxx 中的数字
+        commenter_info_item['following_num'] = following_num[2:]
+
+        follower_num = response.xpath('//*[@id="content"]/div/div[2]/p[1]/a/text()').extract()
+        follower_num = follower_num[0]
+        result = re.findall("被(.*)人关注", follower_num)
+        follower_num = result[0]
+        commenter_info_item['follower_num'] = follower_num
+        self.logger.info(commenter_info_item)
+        yield commenter_info_item
+
+    def get_commenter_link_list(self):
+        client = pymongo.MongoClient(host=MONGO_URI, port=27017)
+        db = client[MONGO_DATABASE]
         comment_infos_collection = db['comment_infos']
         commenter_link_list = []
         for comment_infos in comment_infos_collection.find():
             commenter_link = comment_infos['commenter_link']
             commenter_link_list.append(commenter_link)
+        return commenter_link_list
 
-        for index in range(250):
-            if index >= 250:
-                break
-            commenter_link = commenter_link_list[index]
-            time.sleep(3)
-            self.logger.info(commenter_link)
-            yield Request(url=commenter_link, callback=self.parse_comments)
-
-    def parse_commenters(self, response):
-        commenter_info_item = CommenterInfoItem()
-        html = response.text
-        doc = pq(html)
-
-        location = doc('#profile > div > div.bd > div.basic-info > div > a')
-        following_num = doc('#friend > h2 > span > a')
-        follower_num = doc('#content > div > div.aside > p.rev-link > a')
-
-
-        # commenter_info_item['commenter'] = commenter
-        # commenter_info_item['commenter_link'] = commenter_link
-        # commenter_info_item['brief_comment'] = brief_comment
-        # commenter_info_item['comment_useful_upvote'] = comment_useful_upvote
-        # commenter_info_item['comment_timestamp'] = comment_timestamp
-        # commenter_info_item['comment_rating_stars'] = comment_rating_stars
-        # commenter_info_item['comment_movie_title'] = comment_movie_title
-
-        self.logger.info(commenter_info_item)
-        yield commenter_info_item
+    def get_crawled_commenter_link_list(self):
+        client = pymongo.MongoClient(host=MONGO_URI, port=27017)
+        db = client[MONGO_DATABASE]
+        commenter_infos_collection = db['commenter_infos']
+        crawled_commenter_link_list = []
+        for commenter_infos in commenter_infos_collection.find():
+            commenter_link = commenter_infos['commenter_link']
+            crawled_commenter_link_list.append(commenter_link)
+        return crawled_commenter_link_list

@@ -23,7 +23,6 @@ class TOP250MovieInfosSpider(scrapy.Spider):
     def parse_top250(self, response):
         top250_movie_info_item = TOP250MovieInfoItem()
         html = response.text
-        self.logger.info(html)
         doc = pq(html)
         all_movies = doc('#content > div > div.article > ol > li > div > div.info')
         for movie in all_movies.items():

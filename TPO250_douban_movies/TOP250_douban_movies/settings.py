@@ -98,7 +98,7 @@ HTTPCACHE_ENABLED = True
 
 MONGO_URI = '127.0.0.1'
 
-MONGO_DATABASE = 'top_250_douban_movies'
+MONGO_DATABASE = 'top_250_douban_movies_test'
 
 SELENIUM_TIMEOUT = 20
 

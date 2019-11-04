@@ -37,7 +37,7 @@ class SeleniumMiddleware():
         self.logger.info('PhantomJS is Starting')
         try:
             self.browser.get(request.url)
-            time.sleep(0.1)
+            time.sleep(1)
             html = self.browser.page_source
             current_url = request.url
 
