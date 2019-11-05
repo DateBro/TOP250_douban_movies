@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 import re
 import time
 import pymongo
@@ -16,9 +17,12 @@ class CommentersSpider(scrapy.Spider):
 
     def start_requests(self):
         commenter_link_list = self.get_commenter_link_list()
-        crawled_commenter_link_list = self.get_commenter_link_list()
+        crawled_commenter_link_list = self.get_crawled_commenter_link_list()
 
-        for commenter_link in commenter_link_list[0:1000]:
+        for commenter_link in commenter_link_list:
+            # time.sleep(4)
+            # self.logger.info(commenter_link)
+            # yield Request(url=commenter_link, callback=self.parse_commenters)
             if commenter_link not in crawled_commenter_link_list:
                 crawled_commenter_link_list.append(commenter_link)
                 time.sleep(4)
@@ -29,22 +33,36 @@ class CommentersSpider(scrapy.Spider):
         commenter_info_item = CommenterInfoItem()
 
         commenter_link = response.xpath('//*[@id="db-usr-profile"]/div[2]/ul/li[1]/a/@href').extract()
-        commenter_link = commenter_link[0]
+        try:
+            commenter_link = commenter_link[0]
+        except IndexError:
+            # 已经注销账号的用户会出错
+            self.logger.info('该用户已经主动注销帐号')
+            return
+
         commenter_info_item['commenter_link'] = commenter_link
 
         location = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/a/text()').extract()
         if location is None:
             lcoation = '未知'
         else:
-            location = location[0]
+            try:
+                location = location[0]
+            except IndexError:
+                lcoation = '未知'
         commenter_info_item['location'] = location
 
         register_timestamp = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/div/text()[2]').extract()
-        register_timestamp = register_timestamp[0]
-        # 截取 xxxx-xx-xx 日期
-        result = re.findall('(.*)加入', register_timestamp)
-        register_timestamp = result[0]
-        register_timestamp = register_timestamp[0:10]
+        try:
+            register_timestamp = register_timestamp[0]
+            # 截取 xxxx-xx-xx 日期
+            result = re.findall('(.*)加入', register_timestamp)
+            register_timestamp = result[0]
+            register_timestamp = register_timestamp[0:10]
+        except IndexError:
+            # 因为有的账号根据log查看后发现是被永久停用的，没法获取注册时间
+            register_timestamp = datetime.date.today()
+
         commenter_info_item['register_timestamp'] = register_timestamp
 
         account_name = response.xpath('//*[@id="profile"]/div/div[2]/div[1]/div/div/text()[1]').extract()
@@ -53,7 +71,11 @@ class CommentersSpider(scrapy.Spider):
         commenter_info_item['account_name'] = account_name[0]
 
         following_num = response.xpath('//*[@id="friend"]/h2/span/a/text()').extract()
-        following_num = following_num[0]
+        try:
+            following_num = following_num[0]
+        except IndexError:
+            # 如果没有关注的人的话没有用户关注多少人，但会有被0人关注
+            following_num = 0
         # 截取 成员xxx 中的数字
         commenter_info_item['following_num'] = following_num[2:]
 
