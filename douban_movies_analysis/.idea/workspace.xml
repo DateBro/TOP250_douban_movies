@@ -14,28 +14,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
+            <state relative-caret-position="690">
+              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
-                <element signature="e#1#15#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+        <entry file="file://$PROJECT_DIR$/analysis/statistics/plot_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            <state relative-caret-position="59">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#1400#1994#0" />
-                <element signature="e#1677#2102#0" />
-                <element signature="e#2148#2760#0" />
-                <element signature="e#2589#3221#0" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,12 +41,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="139">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#2053#2279#0" />
-                <element signature="e#2368#2667#0" />
+                <element signature="e#1942#3515#0" />
+                <element signature="e#4294#4593#0" />
+                <element signature="e#4673#5026#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#393#1511#0" />
+                <element signature="e#1563#1667#0" />
+                <element signature="e#3085#3510#0" />
+                <element signature="e#2989#3179#0" />
+                <element signature="e#4219#4879#0" />
               </folding>
             </state>
           </provider>
@@ -78,14 +93,15 @@
         <option value="$PROJECT_DIR$/analysis.py" />
         <option value="$PROJECT_DIR$/analysis/statistics/commenter_analysis.py" />
         <option value="$PROJECT_DIR$/utils/utils.py" />
-        <option value="$PROJECT_DIR$/analysis/statistics/movie_analysis.py" />
+        <option value="$PROJECT_DIR$/analysis/statistics/plot_test.py" />
         <option value="$PROJECT_DIR$/analysis/statistics/comment_analysis.py" />
+        <option value="$PROJECT_DIR$/analysis/statistics/movie_analysis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="y" value="-5" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -94,9 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Course" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,18 +120,15 @@
             <path>
               <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,6 +143,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -157,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.plot_test">
     <configuration name="comment_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="douban_movies_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,8 +193,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="movie_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="douban_movies_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/statistics/movie_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="douban_movies_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/statistics/plot_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_test" />
+        <item itemvalue="Python.movie_analysis" />
         <item itemvalue="Python.comment_analysis" />
       </list>
     </recent_temporary>
@@ -197,12 +256,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572449267925</updated>
       <workItem from="1572449269195" duration="11509000" />
-      <workItem from="1572692834054" duration="14924000" />
+      <workItem from="1572692834054" duration="16867000" />
+      <workItem from="1572827291896" duration="888000" />
+      <workItem from="1572832536571" duration="1023000" />
+      <workItem from="1572863488066" duration="14464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26433000" />
+    <option name="totallyTimeSpent" value="44751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -213,9 +275,10 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19597316" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20469798" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="File Transfer" weight="0.32954547" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Pylint" order="1" />
       <window_info anchor="bottom" id="CheckStyle" order="2" />
@@ -225,7 +288,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.3181818" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.4588068" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
@@ -238,7 +301,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="SciView" order="7" weight="0.3295302" />
       <window_info anchor="right" id="Maven" order="8" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
@@ -250,6 +313,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/douban_movies_analysis$comment_analysis.coverage" NAME="comment_analysis Coverage Results" MODIFIED="1572500478669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$plot_test.coverage" NAME="plot_test Coverage Results" MODIFIED="1572934192357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$movie_analysis.coverage" NAME="movie_analysis Coverage Results" MODIFIED="1572917715914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymongo/collection.py">
@@ -266,24 +331,13 @@
     <entry file="file://$PROJECT_DIR$/海上钢琴师.jpg" />
     <entry file="file://$PROJECT_DIR$/楚门的世界.jpg" />
     <entry file="file://$PROJECT_DIR$/灾难.jpg" />
-    <entry file="file://$PROJECT_DIR$/word_cloud_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="e#63#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/word_cloud_example.py" />
     <entry file="file://$PROJECT_DIR$/data/哈工大停用词表.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20640" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis.py" />
     <entry file="file://$PROJECT_DIR$/analysis/statistics/commenter_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -293,38 +347,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="139">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#2053#2279#0" />
-            <element signature="e#2368#2667#0" />
+            <element signature="e#1942#3515#0" />
+            <element signature="e#4294#4593#0" />
+            <element signature="e#4673#5026#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/plot_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        <state relative-caret-position="59">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1400#1994#0" />
-            <element signature="e#1677#2102#0" />
-            <element signature="e#2148#2760#0" />
-            <element signature="e#2589#3221#0" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
+        <state relative-caret-position="690">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
           <folding>
-            <element signature="e#1#15#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#393#1511#0" />
+            <element signature="e#1563#1667#0" />
+            <element signature="e#3085#3510#0" />
+            <element signature="e#2989#3179#0" />
+            <element signature="e#4219#4879#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Remote Python 3.6.8 (sftp://zhiyong@192.168.1.4:22/usr/bin/python)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

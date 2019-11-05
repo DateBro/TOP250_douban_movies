@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" autoUpload="Always" serverName="zhiyong@24s3588g98.zicp.vip:10032">
     <serverData>
       <paths name="grad2019@211.87.232.138:4239">
         <serverdata>
@@ -9,20 +9,21 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="zhiyong@192.168.1.6:22">
+      <paths name="zhiyong@192.168.1.4:22">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/pycharm_projects/douban_movies_analysis" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
       <paths name="zhiyong@24s3588g98.zicp.vip:10032">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/pycharm_projects/douban_movies_analysis" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

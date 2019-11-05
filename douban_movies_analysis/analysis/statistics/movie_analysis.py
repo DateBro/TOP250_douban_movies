@@ -1,9 +1,13 @@
 import pymongo
 import jieba
-from utils.utils import get_movie_comments_dict, generate_cloud, get_genre_dict
+import matplotlib.pyplot as plt
+import numpy as np
+from utils.utils import get_movie_comments_dict, generate_cloud, get_genre_dict, get_movie_info_dict_list, \
+    get_movie_dataframe
 
 client = pymongo.MongoClient(host='localhost', port=27017)
 db = client['top_250_douban_movies']
+dataframe = get_movie_dataframe()
 
 # 对每部电影电影生成对应的词云
 def generate_movie_cloud():
@@ -36,28 +40,15 @@ def generate_movie_cloud():
 
 # 总评分最高的前10部电影
 def stars_movies(rank_num=10):
-    movie_stars_dict = {}
-    movie_infos_collection = db['movie_infos']
-    for movie_info in movie_infos_collection.find():
-        movie_title = movie_info['movie_title']
-        movie_stars = movie_info['rating_related_info']['rating_num']
-        movie_stars_dict[movie_title] = movie_stars
-
-    ranked_list = sorted(movie_stars_dict.items(), key=lambda item:item[1],reverse=True)
-    ranked_list = ranked_list[:rank_num]
-    ranked_dict = {}
-    for l in ranked_list:
-        ranked_dict[l[0]] = l[1]
-    return ranked_dict
+    return dataframe.sort_values('rating_num', ascending=False)[['movie_title','rating_num']].head(rank_num)
 
 # 分析电影上映年份的电影数量，可以绘图
-# 可以回头看一下DataFrame和matplotlib的操作
-def year_movies():
-    pass
-
-# 有时间的话可以分析电影一到五星百分比，并绘图
-def stars_percentage_movies():
-    pass
+def year_movies(rank_num=10):
+    # 改用 DataFrame 简洁的 API 实现
+    year_statistics = dataframe.groupby('year')['util_num'].sum()
+    year_statistics = year_statistics.sort_values(ascending=False).head(rank_num)
+    return year_statistics
+    # 后面可以写一下将统计数据绘图的方法
 
 # 分析每个电影类型所有的电影数量
 def genre_movies():
@@ -74,23 +65,12 @@ def genre_movies():
 
 # 分析前十名上榜电影最多的导演
 def director_movies(rank_num = 10):
-    director_movies_dict = {}
-    movie_infos_collection = db['movie_infos']
-    for movie_info in movie_infos_collection.find():
-        movie_director = movie_info['director']
-        if movie_director not in director_movies_dict.keys():
-            director_movies_dict[movie_director] = 1
-        else:
-            director_movies_dict[movie_director] += 1
-
-    ranked_list = sorted(director_movies_dict.items(), key=lambda item:item[1],reverse=True)
-    ranked_list = ranked_list[:rank_num]
-    ranked_dict = {}
-    for l in ranked_list:
-        ranked_dict[l[0]] = l[1]
-    return ranked_dict
+    director_statistics = dataframe.groupby('director')['util_num'].sum()
+    director_statistics = director_statistics.sort_values(ascending=False).head(rank_num)
+    return director_statistics
 
 # 分析前十名上榜电影最多的演员
+# 暂时不知道如何使用 DataFrame 的 API 修改
 def roles_movies(rank_num = 10):
     roles_movies_dict = {}
     movie_infos_collection = db['movie_infos']
@@ -102,12 +82,22 @@ def roles_movies(rank_num = 10):
                 roles_movies_dict[role] = 1
             else:
                 roles_movies_dict[role] += 1
-    ranked_list = sorted(roles_movies_dict.items(),key=lambda item:item[1],reverse=True)
+    ranked_list = sorted(roles_movies_dict.items(), key=lambda item: item[1], reverse=True)
     ranked_list = ranked_list[:rank_num]
     ranked_dict = {}
     for l in ranked_list:
         ranked_dict[l[0]] = l[1]
     return ranked_dict
 
+# 分析评论数前rank_num名电影
+def comments_num_movies(rank_num=10):
+    comments_num_statistics = dataframe.sort_values('comment_num', ascending=False)[['movie_title', 'comment_num']].head(rank_num)
+    return comments_num_statistics
+
+# 分析投票数前rank_num名电影
+def rating_people_num_movies(rank_num=10):
+    rating_people_num_statistics = dataframe.sort_values('rating_people_num', ascending=False)[['movie_title', 'rating_people_num']].head(rank_num)
+    return rating_people_num_statistics
+
 if __name__ == '__main__':
-    pass
+    year_movies()
