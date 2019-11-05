@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 from utils.utils import get_movie_info_dict_list, get_movie_dataframe, get_comments_dataframe, comment_df_year, comment_df_month
 
@@ -33,7 +34,10 @@ if __name__ == '__main__':
     # month_comment_statistics = month_comment_statistics.sort_values(ascending=False)
     # print(month_comment_statistics)
 
-    day_comment_df = comment_df
-    day_comment_statistics = day_comment_df.groupby('comment_timestamp')['util_num'].sum()
-    day_comment_statistics = day_comment_statistics.sort_values(ascending=False).head(10)
-    print(day_comment_statistics)
+    # day_comment_df = comment_df
+    # day_comment_statistics = day_comment_df.groupby('comment_timestamp')['util_num'].sum()
+    # day_comment_statistics = day_comment_statistics.sort_values(ascending=False).head(10)
+    # print(day_comment_statistics)
+
+    stopwords = pd.read_csv("../../data/哈工大停用词表.txt", index_col=False, quoting=3, sep="\t", names=['stopword'], encoding='utf-8')
+    print(stopwords.head(10))

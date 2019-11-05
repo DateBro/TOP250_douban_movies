@@ -1,6 +1,10 @@
 import pymongo
 import jieba
-from utils.utils import get_genre_dict, generate_cloud, get_movie_genre_dict, get_comments_dataframe
+from wordcloud import WordCloud
+import numpy as np
+
+from utils.utils import get_genre_dict, get_movie_genre_dict, get_comments_dataframe, init_stopwords, \
+    get_genre_comments_words_dataframe
 from utils.utils import comment_df_year, comment_df_month
 
 client = pymongo.MongoClient(host='localhost', port=27017)
@@ -30,17 +34,41 @@ def generate_genre_cloud():
                 print('comment_movie_genre is not in the genres_comments_dict')
                 print(comment_movie_genre)
 
-    for genres in genres_comments_dict.keys():
-        comment_list = genres_comments_dict[genres]
-        comment_agg = ''
-        for comment in comment_list:
-            single_comment_seq = " ".join(jieba.cut(comment))
-            comment_agg += single_comment_seq
-        genres_comments_dict[genres] = comment_agg
+    stop_words = init_stopwords()
 
-        store_path = clouds_path + str(genres)
-        word_cloud = generate_cloud(comment_agg)
+    for genre in genres_comments_dict.keys():
+        comment_words_df = get_genre_comments_words_dataframe(genre)
+        comment_words_df = comment_words_df[~comment_words_df.comment_word.isin(stop_words.stopword)]
+
+        # 统计词频
+        words_stat = comment_words_df.groupby(by=['comment_word'])['comment_word'].agg({"计数": np.size})
+        words_stat = words_stat.reset_index().sort_values(by=["计数"], ascending=False)
+
+        word_frequency = {x[0]: x[1] for x in words_stat.head(1000).values}
+
+        store_path = clouds_path + str(genre)
+        word_cloud = WordCloud(
+            font_path="../../fonts/JingDianWeiBeiJian-1.ttf",
+            background_color='white',
+            max_words=200,
+            max_font_size=100,
+            width=1200,
+            height=700
+        )
+        word_cloud.fit_words(word_frequency)
         word_cloud.to_file(store_path + ".jpg")
+
+    # for genres in genres_comments_dict.keys():
+    #     comment_list = genres_comments_dict[genres]
+    #     comment_agg = ''
+    #     for comment in comment_list:
+    #         single_comment_seq = " ".join(jieba.cut(comment))
+    #         comment_agg += single_comment_seq
+    #     genres_comments_dict[genres] = comment_agg
+    #
+    #     store_path = clouds_path + str(genres)
+    #     word_cloud = generate_cloud(comment_agg)
+    #     word_cloud.to_file(store_path + ".jpg")
 
 # 分析指定电影其短评的发表时间频率，即将时间跨度等分，统计每个时间跨度内的短评数量，可以绘图
 def comments_year_frequency(rank_num=10):

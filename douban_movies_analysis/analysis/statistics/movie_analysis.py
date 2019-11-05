@@ -2,16 +2,19 @@ import pymongo
 import jieba
 import matplotlib.pyplot as plt
 import numpy as np
-from utils.utils import get_movie_comments_dict, generate_cloud, get_genre_dict, get_movie_info_dict_list, \
-    get_movie_dataframe
+import pandas as pd
+from wordcloud import WordCloud
+
+from utils.utils import get_movie_comments_dict, get_genre_dict, get_movie_info_dict_list, \
+    get_movie_dataframe, get_movie_comments_words_dataframe, init_stopwords
 
 client = pymongo.MongoClient(host='localhost', port=27017)
-db = client['top_250_douban_movies']
+db = client['top_250_douban_movies_test']
 dataframe = get_movie_dataframe()
 
 # 对每部电影电影生成对应的词云
 def generate_movie_cloud():
-    clouds_path = './cloud_imgs/movie_clouds/'
+    clouds_path = '../../cloud_imgs/movie_clouds/'
     comment_collection = db['comment_infos']
     # 先得到250部电影的title
     movie_comments_dict = get_movie_comments_dict()
@@ -26,16 +29,28 @@ def generate_movie_cloud():
             print('this movie is not in the dict')
             print(comment_movie)
 
+    stop_words = init_stopwords()
+
     for movie_title in movie_comments_dict.keys():
-        comment_list = movie_comments_dict[movie_title]
-        comment_agg = ''
-        for comment in comment_list:
-            single_comment_seq = " ".join(jieba.cut(comment))
-            comment_agg += single_comment_seq
-        movie_comments_dict[movie_title] = comment_agg
+        comment_words_df = get_movie_comments_words_dataframe(movie_title)
+        comment_words_df = comment_words_df[~comment_words_df.comment_word.isin(stop_words.stopword)]
+
+        # 统计词频
+        words_stat = comment_words_df.groupby(by=['comment_word'])['comment_word'].agg({"计数": np.size})
+        words_stat = words_stat.reset_index().sort_values(by=["计数"], ascending=False)
+
+        word_frequency = {x[0]: x[1] for x in words_stat.head(1000).values}
 
         store_path = clouds_path + str(movie_title)
-        word_cloud = generate_cloud(comment_agg)
+        word_cloud = WordCloud(
+            font_path="../../fonts/JingDianWeiBeiJian-1.ttf",
+            background_color='white',
+            max_words=2000,
+            max_font_size=40,
+            width=1000,
+            height=500
+        )
+        word_cloud.fit_words(word_frequency)
         word_cloud.to_file(store_path + ".jpg")
 
 # 总评分最高的前10部电影
@@ -100,4 +115,5 @@ def rating_people_num_movies(rank_num=10):
     return rating_people_num_statistics
 
 if __name__ == '__main__':
-    year_movies()
+    # year_movies()
+    generate_movie_cloud()
