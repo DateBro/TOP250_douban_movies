@@ -10,7 +10,7 @@
 pip3 install -r requirements.txt
 ```
 
-但 PhantomJs 无法用 pip 直接安装，具体安装过程可参考《Python3爬虫开发实战》中的安装教程；
+除了python的一些库以外，PhantomJs 和 MongoDB 数据库 无法用 pip 直接安装，具体安装过程可参考《Python3爬虫开发实战》中的安装教程；
 
 ## 设置说明
 
