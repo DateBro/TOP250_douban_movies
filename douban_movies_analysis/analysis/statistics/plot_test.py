@@ -2,14 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from utils.utils import get_movie_info_dict_list, get_movie_dataframe, get_comments_dataframe, comment_df_year, comment_df_month
-
-
-plt.style.use('seaborn-white')
-data = np.random.randn(1000)
+from utils.utils import get_movie_info_dict_list, get_movie_dataframe, get_comments_dataframe, comment_df_year, \
+    comment_df_month, get_genre_comments_words_dataframe
 
 if __name__ == '__main__':
-    dataframe = get_movie_dataframe()
+    # dataframe = get_movie_dataframe()
     # print(dataframe.info())
     # a = dataframe.groupby('director')['util_num'].sum()
     # b = a.sort_values(ascending=False).head(10)
@@ -20,6 +17,8 @@ if __name__ == '__main__':
     # print(comments_num_statistics)
 
     comment_df = get_comments_dataframe()
+    # comment_df = get_genre_comments_words_dataframe()
+
     # comment_df['comment_timestamp'] = comment_df['comment_timestamp'].str.slice(0, 7)
     # print(comment_df.head(1))
     # print(comment_df.groupby('commenter').apply(comment_df_year).head(1))
@@ -29,15 +28,15 @@ if __name__ == '__main__':
     # year_comment_statistics = year_comment_statistics.sort_values(ascending=False).head(10)
     # print(year_comment_statistics)
 
-    # month_comment_df = comment_df.groupby('commenter').apply(comment_df_month)
-    # month_comment_statistics = month_comment_df.groupby('comment_timestamp')['util_num'].sum()
-    # month_comment_statistics = month_comment_statistics.sort_values(ascending=False)
-    # print(month_comment_statistics)
+    month_comment_df = comment_df.groupby('commenter').apply(comment_df_month)
+    month_comment_statistics = month_comment_df.groupby('comment_timestamp')['util_num'].sum()
+    month_comment_statistics = month_comment_statistics.sort_values(ascending=False).head(10)
+    print(month_comment_statistics)
 
     # day_comment_df = comment_df
     # day_comment_statistics = day_comment_df.groupby('comment_timestamp')['util_num'].sum()
     # day_comment_statistics = day_comment_statistics.sort_values(ascending=False).head(10)
     # print(day_comment_statistics)
 
-    stopwords = pd.read_csv("../../data/哈工大停用词表.txt", index_col=False, quoting=3, sep="\t", names=['stopword'], encoding='utf-8')
-    print(stopwords.head(10))
+    # stopwords = pd.read_csv("../../data/哈工大停用词表.txt", index_col=False, quoting=3, sep="\t", names=['stopword'], encoding='utf-8')
+    # print(stopwords.head(10))

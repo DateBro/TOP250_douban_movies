@@ -1,17 +1,20 @@
+from __future__ import division, print_function
 import pymongo
 import jieba
 from wordcloud import WordCloud
 import numpy as np
+from matplotlib import pyplot as plt
+import matplotlib
+import seaborn as sns
 
 from utils.utils import get_genre_dict, get_movie_genre_dict, get_comments_dataframe, init_stopwords, \
-    get_genre_comments_words_dataframe
+    get_genre_comments_words_dataframe, plot2y
 from utils.utils import comment_df_year, comment_df_month
 
 client = pymongo.MongoClient(host='localhost', port=27017)
 db = client['top_250_douban_movies']
 dataframe = get_comments_dataframe()
 
-# 后面添加针对某一部特定电影的影评分析
 
 # 对电影的每种类型生成对应的词云
 def generate_genre_cloud():
@@ -51,24 +54,13 @@ def generate_genre_cloud():
             font_path="../../fonts/JingDianWeiBeiJian-1.ttf",
             background_color='white',
             max_words=200,
-            max_font_size=100,
-            width=1200,
-            height=700
+            max_font_size=200,
+            width=1400,
+            height=800
         )
         word_cloud.fit_words(word_frequency)
         word_cloud.to_file(store_path + ".jpg")
 
-    # for genres in genres_comments_dict.keys():
-    #     comment_list = genres_comments_dict[genres]
-    #     comment_agg = ''
-    #     for comment in comment_list:
-    #         single_comment_seq = " ".join(jieba.cut(comment))
-    #         comment_agg += single_comment_seq
-    #     genres_comments_dict[genres] = comment_agg
-    #
-    #     store_path = clouds_path + str(genres)
-    #     word_cloud = generate_cloud(comment_agg)
-    #     word_cloud.to_file(store_path + ".jpg")
 
 # 分析指定电影其短评的发表时间频率，即将时间跨度等分，统计每个时间跨度内的短评数量，可以绘图
 def comments_year_frequency(rank_num=10):
@@ -84,11 +76,49 @@ def comments_month_frequency(rank_num=10):
     month_comment_statistics = month_comment_statistics.sort_values(ascending=False).head(rank_num)
     return month_comment_statistics
 
+
 def comments_day_frequency(rank_num=10):
     day_comment_df = dataframe.groupby('commenter')
     day_comment_statistics = day_comment_df.groupby('comment_timestamp')['util_num'].sum()
     day_comment_statistics = day_comment_statistics.sort_values(ascending=False).head(rank_num)
     return day_comment_statistics
 
+
+def plot_time(movie_title):
+    matplotlib.rc('figure', figsize=(14, 7))
+    matplotlib.rc('font', size=14)
+    matplotlib.rc('axes', grid=False)
+    matplotlib.rc('axes', facecolor='white')
+
+    data_com_X = dataframe[dataframe.comment_movie_title == movie_title]
+
+    sns.distplot(data_com_X.comment_timestamp.apply(lambda x: int(x[0:4]) + float(int(x[5:7]) / 12.0))
+                 , bins=100, kde=False, rug=True)
+    plt.xlabel('time')
+    plt.ylabel('Number of short_comment')
+    img_path = './plot_time/' + movie_title + '.jpg'
+    plt.savefig(img_path)
+    plt.show()
+
+
+def plot_stars(movie_title):
+    data_com_X = dataframe[dataframe.comment_movie_title == movie_title]
+    plot2y(x_data=data_com_X.comment_timestamp.apply(lambda x: int(x[0:4]) + float(float(x[5:7]) / 12.0))
+           , x_label='time'
+           , type1='scatter'
+           , y1_data=data_com_X['comment_useful_upvote']
+           , y1_color='#539caf'
+           , y1_label='useful_num'
+           , type2='scatter'
+           , y2_data=data_com_X['comment_rating_stars']
+           , y2_color='#7663b0'
+           , y2_label='star'
+           , title='Useful vote_up and star over Time')
+    img_path = './plot_stars/' + movie_title + '.jpg'
+    plt.savefig(img_path)
+    plt.show()
+
 if __name__ == '__main__':
-    generate_genre_cloud()
+    # generate_genre_cloud()
+    plot_time("肖申克的救赎")
+    # plot_stars("肖申克的救赎")

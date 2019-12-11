@@ -15,24 +15,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
+        <entry file="file://$PROJECT_DIR$/analysis/deeplearning/keras/score_prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="239">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#284#302#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/statistics/plot_test.py">
+        <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="330">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/analysis/deeplearning/test/mood_classify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#284#587#0" />
+                <element signature="e#782#1327#0" />
+                <element signature="e#2176#3016#0" />
+                <element signature="e#2665#4461#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analysis/deeplearning/test/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+              <folding>
+                <element signature="e#21#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,29 +66,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="189" column="4" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
+            <state relative-caret-position="-143">
+              <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#228#1904#0" />
-                <element signature="e#1942#3515#0" />
-                <element signature="e#7529#9208#0" />
-                <element signature="e#9204#9350#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding>
-                <element signature="e#1563#1667#0" />
-                <element signature="e#3085#3510#0" />
-                <element signature="e#2989#3179#0" />
-                <element signature="e#4219#4879#0" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,6 +87,18 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>get_movie_genre_dict</find>
+      <find>1</find>
+      <find>...</find>
+      <find>A</find>
+      <find>sxid</find>
+      <find>sixd_took</find>
+      <find>print</find>
+      <find>matplotlib2tikz</find>
+      <find>numpy</find>
+      <find>comment</find>
+      <find>get_comments_dataframe</find>
+      <find>dataframe</find>
+      <find>comment_rating_stars</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -90,11 +108,33 @@
         <option value="$PROJECT_DIR$/movie_analysis.py" />
         <option value="$PROJECT_DIR$/comment_analysis.py" />
         <option value="$PROJECT_DIR$/analysis.py" />
-        <option value="$PROJECT_DIR$/analysis/statistics/commenter_analysis.py" />
         <option value="$PROJECT_DIR$/analysis/statistics/plot_test.py" />
-        <option value="$PROJECT_DIR$/utils/utils.py" />
-        <option value="$PROJECT_DIR$/analysis/statistics/comment_analysis.py" />
+        <option value="$PROJECT_DIR$/data/百度停用词表.txt" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/data/__init__.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/data/dataset.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/models/__init__.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/main.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/config.py" />
+        <option value="E:/GitHubFiles/AugmentedAutoencoder/setup.py" />
+        <option value="E:/GitHubFiles/sixd_toolkit/setup.py" />
+        <option value="E:/GitHubFiles/sixd_toolkit/params/__init__.py" />
+        <option value="E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/eval_utils.py" />
+        <option value="E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/icp_utils.py" />
+        <option value="E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/eval_plots.py" />
+        <option value="E:/GitHubFiles/AugmentedAutoencoder/auto_pose/ae/ae_train.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/models/BasicModule.py" />
+        <option value="$PROJECT_DIR$/test/test.py" />
+        <option value="$PROJECT_DIR$/test/test2.py" />
+        <option value="$USER_HOME$/.jupyter/jupyter_notebook_config.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/mood_classify.py" />
         <option value="$PROJECT_DIR$/analysis/statistics/movie_analysis.py" />
+        <option value="$PROJECT_DIR$/utils/utils.py" />
+        <option value="$PROJECT_DIR$/analysis/statistics/commenter_analysis.py" />
+        <option value="$PROJECT_DIR$/analysis/statistics/comment_analysis.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/test/test.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/keras/score_prediction.py" />
+        <option value="$PROJECT_DIR$/analysis/deeplearning/test/mood_classify.py" />
       </list>
     </option>
   </component>
@@ -104,9 +144,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="5" />
+    <option name="y" value="5" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -115,6 +155,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,26 +173,44 @@
               <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearning" type="462c0819:PsiDirectoryNode" />
+              <item name="keras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearning" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
               <item name="statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="douban_movies_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="douban_movies_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -159,20 +219,25 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\douban_movies_analysis\utils" />
-      <recent name="E:\PycharmProjects\douban_movies_analysis\data" />
-      <recent name="E:\PycharmProjects\douban_movies_analysis" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\douban_movies_analysis\analysis\deeplearning\pytorch" />
       <recent name="E:\PycharmProjects\douban_movies_analysis\analysis\statistics" />
       <recent name="E:\PycharmProjects\douban_movies_analysis\analysis" />
       <recent name="E:\PycharmProjects\douban_movies_analysis\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\douban_movies_analysis\data" />
+      <recent name="E:\PycharmProjects\douban_movies_analysis\analysis\deeplearning" />
+      <recent name="E:\PycharmProjects\douban_movies_analysis\test" />
+      <recent name="E:\PycharmProjects\douban_movies_analysis\utils" />
+      <recent name="E:\PycharmProjects\douban_movies_analysis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.movie_analysis">
+  <component name="RunManager" selected="Python.mood_classify">
     <configuration name="comment_analysis (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="douban_movies_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,7 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="comment_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="commenter_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="douban_movies_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,12 +283,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/statistics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\douban_movies_analysis\analysis\statistics\comment_analysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/statistics/commenter_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mood_classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="douban_movies_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/deeplearning/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/deeplearning/test/mood_classify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,28 +333,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/statistics/movie_analysis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plot_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="douban_movies_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/statistics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/statistics/plot_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,11 +365,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.movie_analysis" />
+        <item itemvalue="Python.mood_classify" />
         <item itemvalue="Python.comment_analysis (1)" />
+        <item itemvalue="Python.commenter_analysis" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.plot_test" />
-        <item itemvalue="Python.comment_analysis" />
+        <item itemvalue="Python.movie_analysis" />
       </list>
     </recent_temporary>
   </component>
@@ -322,15 +387,31 @@
       <workItem from="1572692834054" duration="16867000" />
       <workItem from="1572827291896" duration="888000" />
       <workItem from="1572832536571" duration="1023000" />
-      <workItem from="1572863488066" duration="22625000" />
+      <workItem from="1572863488066" duration="25334000" />
+      <workItem from="1572960834104" duration="607000" />
+      <workItem from="1573001998770" duration="707000" />
+      <workItem from="1573051570080" duration="4133000" />
+      <workItem from="1573214126038" duration="108000" />
+      <workItem from="1573300599646" duration="46000" />
+      <workItem from="1573386310844" duration="768000" />
+      <workItem from="1573387087765" duration="893000" />
+      <workItem from="1574258055075" duration="3009000" />
+      <workItem from="1574305317972" duration="9097000" />
+      <workItem from="1574766389227" duration="10001000" />
+      <workItem from="1574819040455" duration="39000" />
+      <workItem from="1574819502633" duration="1700000" />
+      <workItem from="1574824152908" duration="909000" />
+      <workItem from="1575358743574" duration="2209000" />
+      <workItem from="1575361935113" duration="12193000" />
+      <workItem from="1575423078516" duration="2145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52912000" />
+    <option name="totallyTimeSpent" value="104185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -338,10 +419,9 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20469798" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17248322" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.32954547" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Pylint" order="1" />
       <window_info anchor="bottom" id="CheckStyle" order="2" />
@@ -351,109 +431,323 @@
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49932885" visible="true" weight="0.4588068" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49932885" weight="0.41477272" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.4588068" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="File Transfer" order="15" weight="0.328125" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Remote Host" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Key Promoter X" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="SciView" order="7" weight="0.3295302" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="9" weight="0.3295302" />
-      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.6275168" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.3295302" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="11" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/douban_movies_analysis$utils.coverage" NAME="utils Coverage Results" MODIFIED="1572943040516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$commenter_analysis.coverage" NAME="commenter_analysis Coverage Results" MODIFIED="1575376470312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$score_prediction.coverage" NAME="score_prediction Coverage Results" MODIFIED="1574773967059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/deeplearning/keras" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$utils.coverage" NAME="utils Coverage Results" MODIFIED="1575376285599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/douban_movies_analysis$comment_analysis.coverage" NAME="comment_analysis Coverage Results" MODIFIED="1572500478669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_movies_analysis$comment_analysis__1_.coverage" NAME="comment_analysis (1) Coverage Results" MODIFIED="1572947711893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
-    <SUITE FILE_PATH="coverage/douban_movies_analysis$plot_test.coverage" NAME="plot_test Coverage Results" MODIFIED="1572936347163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
-    <SUITE FILE_PATH="coverage/douban_movies_analysis$movie_analysis.coverage" NAME="movie_analysis Coverage Results" MODIFIED="1572947738511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1574820550301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$comment_analysis__1_.coverage" NAME="comment_analysis (1) Coverage Results" MODIFIED="1575380316236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$mood_classify.coverage" NAME="mood_classify Coverage Results" MODIFIED="1575423963324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/deeplearning/test" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$plot_test.coverage" NAME="plot_test Coverage Results" MODIFIED="1573054600121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$test.coverage" NAME="test Coverage Results" MODIFIED="1574820521063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/douban_movies_analysis$movie_analysis.coverage" NAME="movie_analysis Coverage Results" MODIFIED="1575374423180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/statistics" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymongo/collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="1455" column="21" selection-start-line="1455" selection-start-column="21" selection-end-line="1455" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/千与千寻.jpg" />
-    <entry file="file://$PROJECT_DIR$/机器人总动员.jpg" />
-    <entry file="file://$PROJECT_DIR$/霸王别姬.jpg" />
-    <entry file="file://$PROJECT_DIR$/辛德勒的名单.jpg" />
-    <entry file="file://$PROJECT_DIR$/海上钢琴师.jpg" />
-    <entry file="file://$PROJECT_DIR$/楚门的世界.jpg" />
-    <entry file="file://$PROJECT_DIR$/灾难.jpg" />
     <entry file="file://$PROJECT_DIR$/word_cloud_example.py" />
     <entry file="file://$PROJECT_DIR$/analysis.py" />
-    <entry file="file://$PROJECT_DIR$/analysis/statistics/commenter_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/MyGithub/TOP250_douban_movies/TPO250_douban_movies/TOP250_douban_movies/spiders/douban_movies_no_selenium.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://E:/MyGithub/TOP250_douban_movies/TPO250_douban_movies/TOP250_douban_movies/spiders/douban_movies_no_selenium.py" />
     <entry file="file://$PROJECT_DIR$/data/哈工大停用词表.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/statistics/plot_test.py">
+    <entry file="file://$PROJECT_DIR$/cloud_imgs/movie_clouds/活着.jpg" />
+    <entry file="file://$PROJECT_DIR$/data/百度停用词表.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="-703">
+          <caret line="1419" column="1" selection-start-line="1419" selection-start-column="1" selection-end-line="1419" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/wordcloud/wordcloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="346" column="8" selection-start-line="346" selection-start-column="8" selection-end-line="346" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/ae/ae_init_workspace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/sixd_toolkit/params/dataset_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#121#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/GitHubFiles/sixd_toolkit/pysixd/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/GitHubFiles/sixd_toolkit/params/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/eval_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/ae/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/sixd_toolkit/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <marker date="1574665948649" expanded="true" signature="490:598" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/icp_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="249" column="24" lean-forward="true" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="24" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utils.py">
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/eval/eval_plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="189" column="4" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/ae/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/auto_pose/ae/ae_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#228#1904#0" />
-            <element signature="e#1942#3515#0" />
-            <element signature="e#7529#9208#0" />
-            <element signature="e#9204#9350#0" />
+            <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="480">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/GitHubFiles/AugmentedAutoencoder/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/data/dataset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/pytorch/models/BasicModule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dl_python/practices/ad_classcification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6000">
+          <caret line="200" column="27" selection-start-line="200" selection-start-column="27" selection-end-line="200" selection-end-column="27" />
+          <folding>
+            <element signature="e#10#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gt.yml" />
+    <entry file="file://$PROJECT_DIR$/test/test.py" />
+    <entry file="file://$PROJECT_DIR$/test/test2.py" />
+    <entry file="file://$USER_HOME$/.jupyter/jupyter_notebook_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/mood_classify.py" />
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/Filting.ipynb" />
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/plot_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/examples.jpg" />
+    <entry file="file://$PROJECT_DIR$/data/world_countries_shp/World_countries_shp.dbf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/world_countries_shp/World_countries_shp.shp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_year_analysis.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/commenter_province_analysis.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/follow_analysis.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3540">
+          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/statistics/movie_analysis.py">
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/commenter_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="1440">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
           <folding>
-            <element signature="e#1563#1667#0" />
-            <element signature="e#3085#3510#0" />
-            <element signature="e#2989#3179#0" />
-            <element signature="e#4219#4879#0" />
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/statistics/comment_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/keras/score_prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="e#284#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding>
+            <element signature="e#21#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/deeplearning/test/mood_classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#284#587#0" />
+            <element signature="e#782#1327#0" />
+            <element signature="e#2176#3016#0" />
+            <element signature="e#2665#4461#0" />
           </folding>
         </state>
       </provider>
@@ -497,7 +791,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Remote Python 3.6.8 (sftp://zhiyong@192.168.1.4:22/usr/bin/python)</last-edited>
+          <last-edited>Remote Python 3.6.9 (sftp://zhiyong@192.168.50.130:22/usr/bin/python3)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
